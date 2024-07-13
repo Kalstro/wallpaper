@@ -18,11 +18,10 @@ function changeWallpaper(direction) {
 
     document.getElementById('wallpaper').style.backgroundImage = `url('img/${currentWallpaper}.png')`;
 }
+document.getElementById('wallpaper').style.backgroundImage = "url('img/1.png')";
 
 
 // Script 2
-document.getElementById('wallpaper').style.backgroundImage = "url('img/1.png')";
-
 document.addEventListener('mousemove', function(event) {
     let control = document.getElementById('wallpaperControl');
     let nearControl = event.clientY < 50 || event.clientY > (window.innerHeight - 50);
