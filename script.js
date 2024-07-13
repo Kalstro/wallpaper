@@ -32,3 +32,15 @@ document.addEventListener('mousemove', function(event) {
         control.classList.remove('visible');
     }
 });
+
+// Script 3
+let disable_buttons = false;
+
+if (diable_button) {
+    document.getElementById('prevWallpaper').disabled = true;
+    document.getElementById('nextWallpaper').disabled = true;
+}
+else {
+    document.getElementById('prevWallpaper').enabled = false;
+    document.getElementById('nextWallpaper').enabled = false;
+}
