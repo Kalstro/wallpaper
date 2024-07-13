@@ -1,0 +1,72 @@
+.bg {
+    background-color: rgb(39, 39, 41);
+}
+
+.material-icons {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.hidden {
+    display: none;
+}
+
+#showWallpapers {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+}
+
+#wallpapersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.wallpaperItem {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+#wallpaperControl {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+#prevWallpaper, #nextWallpaper {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#wallpaper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+#wallpaperControl {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#wallpaperControl.visible {
+    opacity: 1;
+}
